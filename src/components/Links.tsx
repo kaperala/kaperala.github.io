@@ -22,7 +22,7 @@ export default function Links(): React.ReactElement {
         onClick={() => openNewTab('https://www.linkedin.com/in/kalleperala/')}
         size='lg'
         variant='text'
-        color='text-blue-400'
+        color='blue'
       >
         <AiOutlineLinkedin className=' text-5xl' />
       </IconButton>{' '}
