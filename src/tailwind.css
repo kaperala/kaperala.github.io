@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .end-cursor:after {
+    content: '_';
+    @apply text-white;
+  }
+
+  .end-cursor.blinking:after {
+    animation: blink 1s step-start infinite;
+  }
+
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+}
+
+
+
+html {
+  background-color: #181818;
+}
+
+

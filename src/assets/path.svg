@@ -1,0 +1,10 @@
+    <svg width='6' height='2020'>
+      <path
+        className='path'
+        d='M1 0.5V1900'
+        strokeWidth='6'
+        strokeDasharray='2020'
+      />
+    </svg>
+
+  
