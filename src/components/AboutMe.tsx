@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@material-tailwind/react';
+import { openNewTab } from './utils/utils';
 
 export default function AboutMe(): React.ReactElement {
   return (
@@ -16,11 +17,9 @@ export default function AboutMe(): React.ReactElement {
           skills on the languages I already know and love.
         </span>
       </div>
-      <a href='/resume.pdf'>
-        <Button className='mt-8' variant='filled'>
-          Download Resume
-        </Button>
-      </a>
+      <Button className='mt-8' onClick={() => openNewTab('/resume.pdf')} variant='filled'>
+        Download Resume
+      </Button>
       <div className='pt-5'>
         <span className='text-4xl text-blue-400'>&lt;/</span>
         <span className='text-5xl text-white'>about</span>

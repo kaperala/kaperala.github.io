@@ -9,4 +9,5 @@ export interface Repository {
   description: string;
   language: string;
   archived: boolean;
+  license: { spdx_id: string };
 }
