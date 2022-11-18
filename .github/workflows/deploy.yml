@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to Pages
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 16.17
@@ -22,10 +22,10 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Build project
+      - name: Build the project
         run: npm run build
 
-      - name: Upload production-ready build files
+      - name: Upload build files
         uses: actions/upload-artifact@v2
         with:
           name: production-files
