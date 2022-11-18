@@ -3,7 +3,7 @@ import React from 'react';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { FiGithub } from 'react-icons/fi';
 import { TbBrandDocker } from 'react-icons/tb';
-import { openNewTab } from './utils/NewTab';
+import { openNewTab } from './utils/utils';
 
 export default function Links(): React.ReactElement {
   return (

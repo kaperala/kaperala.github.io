@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconButton } from '@material-tailwind/react';
 import { FaGithubSquare } from 'react-icons/fa';
-import { openNewTab } from './utils/NewTab';
+import { openNewTab } from './utils/utils';
 import { Repository } from './types/types';
 
 export default function Project(props: Repository): React.ReactElement {
