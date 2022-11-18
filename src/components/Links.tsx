@@ -7,7 +7,7 @@ import { openNewTab } from './utils/utils';
 
 export default function Links(): React.ReactElement {
   return (
-    <div className=' w-1/4 absolute pt-5 pb-5 rounded-lg bg-pGray drop-shadow-lg'>
+    <div className=' w-11/12 sm:w-3/4 lg:w-1/4 absolute pt-5 pb-5 rounded-lg bg-pGray drop-shadow-lg'>
       <IconButton
         className=' mr-10'
         onClick={() => openNewTab('https://hub.docker.com/u/kvllu')}

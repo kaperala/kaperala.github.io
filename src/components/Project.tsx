@@ -6,12 +6,12 @@ import { Repository } from './types/types';
 
 export default function Project(props: Repository): React.ReactElement {
   return (
-    <div className='mb-5'>
+    <div className='mb-5 w-5/6'>
       <h3 className='text-2xl text-blue-400'>{props.name}</h3>
       <div className='flex'>
         <span className='text-1xl text-white'>{props.description}</span>
         <IconButton
-          className=' -mt-2'
+          className='ml-6 lg:-mt-2 lg:ml-0'
           onClick={() => openNewTab(props.html_url)}
           size='lg'
           variant='text'
@@ -20,7 +20,7 @@ export default function Project(props: Repository): React.ReactElement {
           <FaGithubSquare className=' text-6xl' />
         </IconButton>{' '}
       </div>
-      <div className='flex gap-3'>
+      <div className='flex gap-3 justify-center lg:justify-start'>
         <Chip
           icon={
             <svg
