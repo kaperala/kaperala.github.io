@@ -1,20 +1,9 @@
 import { useEffect, useState } from 'react';
-import useWindowDimensions from './utils/GetScreenDimensions';
+import { getScrollPercent, useWindowDimensions } from './utils/utils';
 
 const DrawPath = (): React.ReactElement => {
   const { height } = useWindowDimensions();
   const [pathOffset, setPathOffset] = useState<number>(0);
-
-  const getScrollPercent = (): number => {
-    const h = document.documentElement;
-    const b = document.body;
-    const st = 'scrollTop';
-    const sh = 'scrollHeight';
-
-    const scrollPercent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight);
-
-    return scrollPercent;
-  };
 
   const handleScroll = (): void => {
     const scrollPercent = getScrollPercent();

@@ -16,7 +16,7 @@ export default function AboutMe(): React.ReactElement {
           skills on the languages I already know and love.
         </span>
       </div>
-      <a href='/public/resume.pdf'>
+      <a href='/resume.pdf'>
         <Button className='mt-8' variant='filled'>
           Download Resume
         </Button>
