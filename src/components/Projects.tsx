@@ -33,16 +33,18 @@ export default function Projects(props: ProjectsProps): React.ReactElement {
   }, []);
 
   return (
-    <div className='pt-16 text-center lg:w-5/12 lg:pt-0 lg:text-left lg:float-right sm:self-center'>
-      <div className='pb-5 float-left lg:float-none'>
+    <div className='lg:w-5/12 text-center lg:text-left lg:float-left sm:self-center'>
+      <div className='pb-5 mt-14 lg:mt-0'>
         <span className='text-4xl text-blue-400'>&lt;</span>
         <span className='text-5xl text-white'>projects</span>
         <span className='text-4xl text-blue-400'>&gt;</span>
       </div>
-      {getUserData.map((repo) => (
-        <Project key={repo.id} {...repo} />
-      ))}
-      <div className='pt-5 float-right lg:float-none'>
+      <div className='flex flex-col items-center lg:items-start'>
+        {getUserData.map((repo) => (
+          <Project key={repo.id} {...repo} />
+        ))}
+      </div>
+      <div className='pt-5'>
         <span className='text-4xl text-blue-400'>&lt;/</span>
         <span className='text-5xl text-white'>projects</span>
         <span className='text-4xl text-blue-400'>&gt;</span>

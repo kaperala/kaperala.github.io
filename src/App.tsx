@@ -15,7 +15,7 @@ function App(): React.ReactElement {
   };
 
   return (
-    <div id='testi' className=''>
+    <div>
       <div className='pt-64 h-screen'>
         <div className=' pb-72 h-screen'>
           <h1 className='text-white text-5xl'>Hi, I&apos;m Kalle Perälä</h1>
@@ -32,7 +32,10 @@ function App(): React.ReactElement {
         <AboutMe />
         <Projects githubProfileUrl='https://api.github.com/users/kaperala/repos' />
       </div>
-      <div ref={ref} className='flex justify-center relative -mt-20'>
+      <div
+        ref={ref}
+        className='flex justify-center relative mt-128 sm:mt-48 md:mt-32 lg:-mt-20 3xl:-mt-52'
+      >
         <Links />
       </div>
     </div>
