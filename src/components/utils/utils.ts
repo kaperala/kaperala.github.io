@@ -5,13 +5,13 @@ interface Dimensions {
   height: number;
 }
 
-function getScreenDimensions(): Dimensions {
+const getScreenDimensions = (): Dimensions => {
   const { innerWidth: width, innerHeight: height } = window;
   return {
     width,
     height,
   };
-}
+};
 
 export const useWindowDimensions = (): Dimensions => {
   const [screenDimensions, setScreenDimensions] = useState(getScreenDimensions());
