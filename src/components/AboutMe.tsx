@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@material-tailwind/react';
 
-export default function AboutMe(): React.ReactElement {
+const AboutMe = (): React.ReactElement => {
   return (
     <div className=' lg:w-5/12 text-center lg:text-left lg:float-left sm:self-center'>
       <div className='pb-5'>
@@ -28,4 +28,6 @@ export default function AboutMe(): React.ReactElement {
       </div>
     </div>
   );
-}
+};
+
+export default AboutMe;

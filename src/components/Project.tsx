@@ -5,7 +5,7 @@ import { BsCodeSlash } from 'react-icons/bs';
 import { GoLaw } from 'react-icons/go';
 import { Repository } from './types/types';
 
-export default function Project(props: Repository): React.ReactElement {
+const Project = (props: Repository): React.ReactElement => {
   return (
     <div className='mb-5 w-5/6'>
       <a href={props.html_url} rel='noreferrer' target='_blank'>
@@ -38,4 +38,6 @@ export default function Project(props: Repository): React.ReactElement {
       </div>
     </div>
   );
-}
+};
+
+export default Project;

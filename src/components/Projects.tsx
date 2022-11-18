@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Project from './Project';
 import { ProjectsProps, Repository } from './types/types';
 
-export default function Projects(props: ProjectsProps): React.ReactElement {
+const Projects = (props: ProjectsProps): React.ReactElement => {
   const [getUserData, setUserData] = useState<Repository[]>([]);
 
   useEffect(() => {
@@ -51,4 +51,6 @@ export default function Projects(props: ProjectsProps): React.ReactElement {
       </div>
     </div>
   );
-}
+};
+
+export default Projects;

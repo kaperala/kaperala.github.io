@@ -1,4 +1,4 @@
-import { TypePhase, Typing } from './Typing';
+import { TypePhase, Typing } from './utils/typing';
 import { useMemo } from 'react';
 import cn from 'classnames';
 import { shuffleThings } from './utils/utils';

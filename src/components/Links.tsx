@@ -3,7 +3,7 @@ import React from 'react';
 import { AiOutlineLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { FiGithub } from 'react-icons/fi';
 
-export default function Links(): React.ReactElement {
+const Links = (): React.ReactElement => {
   return (
     <div className=' w-11/12 sm:w-3/4 lg:w-1/4 absolute pt-5 pb-5 rounded-lg bg-pGray drop-shadow-lg'>
       <a href='mailto:kalle@perala.dev'>
@@ -23,4 +23,6 @@ export default function Links(): React.ReactElement {
       </a>
     </div>
   );
-}
+};
+
+export default Links;
