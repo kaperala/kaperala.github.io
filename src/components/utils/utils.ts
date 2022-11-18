@@ -28,10 +28,6 @@ export const useWindowDimensions = (): Dimensions => {
   return screenDimensions;
 };
 
-export const openNewTab = (url: string): void => {
-  window.open(url, '_blank', 'noopener,noreferrer');
-};
-
 export const shuffleThings = (things: string[]): string[] => {
   let index = things.length;
   let randomIndex;
